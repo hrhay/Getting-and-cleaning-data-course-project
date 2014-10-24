@@ -125,4 +125,4 @@ tidydata  = aggregate(nolabels[,names(nolabels) != c('activityid','subjectid')],
 tidydata  = merge(tidydata,activitylabels,by='activityid',all.x=TRUE);
 
 # Write the data back to working directory
-write.table(tidydata, './tidydata.txt',row.names=TRUE,sep='\t');
+write.table(tidydata, './tidydata.txt',row.names=FALSE,sep='\t');
